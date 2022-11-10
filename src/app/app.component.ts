@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Day3';
+
+  button1Click(){
+    alert('button1 tıklandı')
+  }
+
+  onConfirm(){
+    window.confirm('silmek istediğinize emin misiniz?')
+  }
 }
