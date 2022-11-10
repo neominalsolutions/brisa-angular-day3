@@ -1,0 +1,13 @@
+<my-button color="red" text="button1" (clicked)="button1Click()"></my-button>
+<my-button (clicked)="onConfirm()" fontSize="32px" color="green" text="delete"></my-button>
+
+<p>
+  Seçilen : {{selectedItem}}
+</p> -->
+
+<app-autocomplete id="browser" list="browsers" [dataSource]="['Edge','Firefox','Chrome','Opera','Safari']" (selected)="selectedItem = $event">
+</app-autocomplete>
+
+<!-- $event kendi componentlerimizde emit edilen değeri yakalamamızı sağlar. -->
+<app-autocomplete id="city" list="cities" [dataSource]="['izmir','ankara','kocaeli','istanbul']" (selected)="selectedItem = $event">
+</app-autocomplete>
