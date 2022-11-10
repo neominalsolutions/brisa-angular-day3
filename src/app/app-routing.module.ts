@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ModuleGuard } from '../shared/guards/module.guard';
 import { UnauthorizeComponent } from './unauthorize/unauthorize.component';
+import { PageGuard } from 'src/shared/guards/page.guard';
 
 const routes: Routes = [
   {

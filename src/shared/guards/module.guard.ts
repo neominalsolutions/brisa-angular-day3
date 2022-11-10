@@ -22,7 +22,7 @@ export class ModuleGuard implements CanLoad {
       console.log('activeRole', activeRole);
      
 
-     if(activeRole == 'cms-manager'){
+     if(activeRole?.includes('cms-manager')){
       return true;
      }
      else {
